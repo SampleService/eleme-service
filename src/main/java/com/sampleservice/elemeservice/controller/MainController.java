@@ -23,7 +23,7 @@ public class MainController extends MObject {
         result.set("msg", "/carryout");
 
         if (requestData.get("interval") != null) {
-            MBaseUtils.generateStringInKBSize(1000, result, (int) requestData.get("interval"));
+            MBaseUtils.generateStringInKBSize(1000, result, (long) requestData.get("interval"));
         }
         return result;
     }
